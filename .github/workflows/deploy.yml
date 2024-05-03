@@ -21,4 +21,4 @@ jobs:
       - name: deploy
         id: depl
         run: |
-          echo $(aws s3 ls)
+          echo ${aws s3 ls}
