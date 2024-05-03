@@ -5,6 +5,9 @@ name: Deploy
 jobs:
   Deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,4 +21,4 @@ jobs:
       - name: deploy
         id: depl
         run: |
-          echo(aws s3 ls)
+          aws s3 ls
