@@ -4,7 +4,7 @@ name: Deploy
 
 jobs:
   Deploy:
-    runs-on: [self-hosted, cloudplatforms]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
